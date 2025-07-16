@@ -1,0 +1,14 @@
+import React from 'react';
+import './Receipt.css';
+
+function Receipt({ data }) {
+  return (
+    <div className="receipt">
+      <p><strong>Date:</strong> {data.date}</p>
+      <p><strong>Amount:</strong> ${data.amount}</p>
+      <p><strong>Provider:</strong> {data.provider}</p>
+    </div>
+  );
+}
+
+export default Receipt;
